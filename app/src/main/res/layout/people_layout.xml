@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFEEC7">
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <!-- poster_path -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/poster_path"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="7dp"/>
+
+        <!-- Original title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="@dimen/text_people"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/poster_path"
+            android:layout_toRightOf="@+id/poster_path"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/poster_path"
+            android:textSize="@dimen/download_people_text"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+            />
+
+        <!-- Birthday -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Birthday"
+            android:textSize="@dimen/text_people"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/name"
+            android:layout_toRightOf="@+id/poster_path" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/download_people_text"
+            android:textStyle="bold"
+            android:id="@+id/birthday"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/poster_path"
+            android:layout_margin="3dp"/>
+
+        <!-- Place of Birth -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_people"
+            android:text="Place of Birth"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/birthday"
+            android:layout_toRightOf="@+id/poster_path" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/download_people_text"
+            android:textStyle="bold"
+            android:id="@+id/place_of_birth"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/poster_path"
+            android:layout_margin="3dp"/>
+
+
+
+        <!-- Biography -->
+        <TextView
+            android:id="@+id/tv_Biography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Biography"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_below="@+id/poster_path"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/biography"
+            android:layout_below="@+id/tv_Biography"
+            android:layout_margin="10dp"
+            android:textSize="15dip"/>
+
+        <TextView
+            android:id="@+id/descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_below="@+id/biography"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>

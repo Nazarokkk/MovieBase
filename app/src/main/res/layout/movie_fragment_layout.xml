@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#94E1FF">
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+    >
+    <!-- poster_path -->
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/poster_path"
+            android:layout_width="140dp"
+            android:layout_height="200dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="7dp"/>
+
+    <!-- Original title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Original title"
+            android:textSize="@dimen/movie_text"
+            android:id="@+id/textView"
+            android:layout_alignTop="@+id/poster_path"
+            android:layout_toRightOf="@+id/poster_path"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/originalTitle"
+            android:layout_below="@+id/textView"
+            android:layout_toRightOf="@+id/poster_path"
+            android:textSize="@dimen/download_text_movie"
+            android:layout_margin="3dp"
+            android:textStyle="bold"
+             />
+
+    <!-- Genre -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Genre"
+            android:textSize="@dimen/movie_text"
+            android:id="@+id/textView2"
+            android:layout_below="@+id/originalTitle"
+            android:layout_toRightOf="@+id/poster_path" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/download_text_movie"
+            android:textStyle="bold"
+            android:id="@+id/genre"
+            android:layout_below="@+id/textView2"
+            android:layout_toRightOf="@+id/poster_path"
+            android:layout_margin="3dp"/>
+
+    <!-- Status -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/movie_text"
+            android:text="Status"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/genre"
+            android:layout_toRightOf="@+id/poster_path" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/download_text_movie"
+            android:textStyle="bold"
+            android:id="@+id/status"
+            android:layout_below="@+id/textView3"
+            android:layout_toRightOf="@+id/poster_path"
+            android:layout_margin="3dp"/>
+
+    <!-- Release Date -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/movie_text"
+            android:text="Release Date"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/status"
+            android:layout_toRightOf="@+id/poster_path" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/download_text_movie"
+            android:textStyle="bold"
+            android:id="@+id/release_date"
+            android:layout_below="@+id/textView4"
+            android:layout_toRightOf="@+id/poster_path"
+            android:layout_margin="3dp"/>
+
+    <!-- Tagline -->
+    <TextView
+        android:id="@+id/tv_tagline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tagline"
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_below="@+id/poster_path"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagline"
+        android:layout_below="@+id/tv_tagline"
+        android:layout_margin="10dp"
+        android:textSize="14dip"/>
+
+    <!-- Description -->
+        <TextView
+            android:id="@+id/descr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_below="@+id/tagline"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+           />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/descr"
+        android:layout_margin="10dp"
+        android:textSize="14dip"/>
+
+    <!-- Line -->
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:text=""
+        style="?android:listSeparatorTextViewStyle"
+        android:layout_below="@+id/description"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+        <!-- production_companies -->
+        <TextView
+            android:id="@+id/prod_comp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Production companies"
+            android:layout_below="@+id/line"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productionCompanies"
+            android:layout_below="@+id/prod_comp"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="14dip"/>
+
+        <!-- production_countries -->
+        <TextView
+            android:id="@+id/prod_countr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Production countries"
+            android:layout_below="@+id/productionCompanies"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/productionCountries"
+            android:layout_below="@+id/prod_countr"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="14dip"/>
+
+        <!-- Line -->
+        <TextView
+            android:id="@+id/line3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:text=""
+            style="?android:listSeparatorTextViewStyle"
+            android:layout_below="@+id/productionCountries"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            />
+
+    <!-- Budget -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/movie_text"
+        android:text="Budget"
+        android:id="@+id/tv_budget"
+        android:layout_below="@+id/productionCountries"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="5dp"
+        android:layout_alignParentLeft="true"
+         />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/download_text_movie2"
+        android:text="$ "
+        android:textStyle="bold"
+        android:id="@+id/tv_dolar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="3dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tv_budget"
+
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/download_text_movie2"
+        android:textStyle="bold"
+        android:id="@+id/budget"
+        android:layout_below="@+id/tv_budget"
+        android:layout_toRightOf="@+id/tv_dolar"
+        android:layout_marginTop="3dp"
+        />
+
+    <!-- Revenue -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/movie_text"
+        android:text="Revenue"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_revenue"
+        android:layout_above="@+id/budget"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/download_text_movie2"
+        android:text="$ "
+        android:layout_marginTop="3dp"
+        android:textStyle="bold"
+        android:id="@+id/tv_dolar1"
+        android:layout_toLeftOf="@+id/revenue"
+        android:layout_below="@+id/tv_revenue"
+       />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/download_text_movie2"
+        android:textStyle="bold"
+        android:id="@+id/revenue"
+        android:layout_below="@+id/tv_revenue"
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- runtime -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/movie_text"
+        android:text="Runtime"
+        android:layout_marginTop="15dp"
+        android:id="@+id/tv_runtime"
+        android:layout_above="@+id/budget"
+        android:layout_alignRight="@+id/description"
+        android:layout_marginRight="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/download_text_movie2"
+        android:text="Min. "
+        android:textStyle="bold"
+        android:id="@+id/tv_min"
+        android:layout_alignTop="@+id/runtime"
+        android:layout_toLeftOf="@+id/runtime" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/download_text_movie2"
+        android:textStyle="bold"
+        android:id="@+id/runtime"
+        android:layout_alignTop="@+id/revenue"
+        android:layout_alignRight="@+id/description" />
+
+    </RelativeLayout>
+
+</ScrollView>

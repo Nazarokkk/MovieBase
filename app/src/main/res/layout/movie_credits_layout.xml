@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp" >
+
+    <!-- Image -->
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/image"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginRight="8dp" />
+
+
+    <TextView
+        android:id="@+id/tv_movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rating"
+        android:textColor="@color/year"
+        android:paddingLeft="10dp"
+        android:text="Movie: "
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/image"
+        />
+
+    <!-- movie-->
+    <TextView
+        android:id="@+id/movie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rating"
+        android:textStyle="bold"
+        android:paddingLeft="3dp"
+        android:paddingTop="10dp"
+        android:layout_toRightOf="@+id/tv_movie"
+        />
+
+    <TextView
+        android:id="@+id/tv_character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rating"
+        android:textColor="@color/year"
+        android:paddingLeft="10dp"
+        android:text="Character: "
+        android:paddingTop="8dp"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/movie"/>
+
+    <!-- character-->
+    <TextView
+        android:id="@+id/character"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/rating"
+        android:textStyle="bold"
+        android:paddingLeft="3dp"
+        android:paddingTop="8dp"
+        android:layout_toRightOf="@+id/tv_character"
+        android:layout_below="@+id/movie"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="title">17dp</dimen>
+    <dimen name="rating">15dip</dimen>
+    <dimen name="popularity">13dip</dimen>
+    <dimen name="year">12dip</dimen>
+    <dimen name="movie_text">13dip</dimen>
+    <dimen name="download_text_movie">14dip</dimen>
+    <dimen name="download_text_movie2">14dip</dimen>
+    <dimen name="name_people">16sp</dimen>
+    <dimen name="text_people">16sp</dimen>
+    <dimen name="download_people_text">17sp</dimen>
+    <dimen name="cast_name_text">20sp</dimen>
+
+
+</resources>

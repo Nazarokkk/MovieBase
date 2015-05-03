@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MovieView</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <color name="popularity">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_item_driver">#d7ddee</color>
+    <color name="list_background">#1a1b1d</color>
+    <color name="list_item_title">#d7ddee</color>
+
+    <color name="list_item_one">#B7EBFF</color>
+    <color name="list_item_two">#FFEEC7</color>
+
+
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item >Upcoming</item>
+        <item >Popular</item>
+        <item >Now playing</item>
+        <item >Top rated</item>
+        <item >Popular people</item>
+        <item >Search movie</item>
+    </string-array>
+
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="action_search">Search</string>
+    <string name="search_hint">Global Movie-Search</string>
+
+
+</resources>
